@@ -51,7 +51,7 @@ public class ConversorTemperatura extends JFrame {
 
 	private void inicarInterfaz() {
 
-		setBounds(100, 100, 451, 491);
+		setBounds(100, 100, 451, 450);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(17, 63, 103));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -146,6 +146,8 @@ public class ConversorTemperatura extends JFrame {
 		contentPane.add(lblA);
 		
 		JButton btnMenuPrincipal = new JButton("Ir al menu principal");
+		btnMenuPrincipal.setForeground(new Color(255, 255, 255));
+		btnMenuPrincipal.setBackground(new Color(52, 105, 154));
 		btnMenuPrincipal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				InterfazConversor interfazPrincipal = new InterfazConversor();
@@ -154,13 +156,13 @@ public class ConversorTemperatura extends JFrame {
 			}
 		});
 		btnMenuPrincipal.setFont(new Font("Roboto Slab", Font.PLAIN, 12));
-		btnMenuPrincipal.setBounds(135, 409, 179, 32);
+		btnMenuPrincipal.setBounds(135, 358, 179, 32);
 		contentPane.add(btnMenuPrincipal);
 		lblResultado.setForeground(new Color(255, 255, 255));
 		
 		lblResultado.setHorizontalAlignment(SwingConstants.CENTER);
 		lblResultado.setFont(new Font("Roboto Slab", Font.BOLD, 18));
-		lblResultado.setBounds(0, 298, 434, 77);
+		lblResultado.setBounds(0, 298, 434, 49);
 		contentPane.add(lblResultado);
 		
 		JLabel lblNewLabel = new JLabel("Informacion");
